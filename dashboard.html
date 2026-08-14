@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="dash-wrap">
+
+    <div class="card">
+      <h2>Dashboard</h2>
+      <div class="welcome" id="welcome-text">Welcome</div>
+      <button class="btn" id="logout-btn">Logout</button>
+    </div>
+
+    <div class="card">
+      <h2>EDC Calculator</h2>
+      <input class="field" id="old-kw" type="number" placeholder="Old Kw">
+      <input class="field" id="new-kw" type="number" placeholder="new Kw">
+      <div class="payment-line">payment here</div>
+      <div class="result" id="edc-result">&mdash;</div>
+      <button class="btn" id="edc-btn" style="margin-top:12px;">Calculator</button>
+    </div>
+
+    <div class="card">
+      <h2>Grade Calculator</h2>
+      <input class="field" id="score" type="number" min="0" max="100" placeholder="Enter score (0-100)">
+      <div class="result" id="grade-result">&mdash;</div>
+      <button class="btn" id="grade-btn" style="margin-top:12px;">Calculator</button>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+  <script>initDashboard();</script>
+</body>
+</html>
