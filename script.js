@@ -45,7 +45,7 @@ function initSignup(){
     saveUsers(users);
 
     setMsg(msg, 'Account created! Redirecting to login...', 'success');
-    setTimeout(() => { window.location.href = 'login.html'; }, 800);
+    setTimeout(() => { window.location.href = 'index.html'; }, 800);
   });
 }
 
@@ -88,14 +88,14 @@ const RATE_PER_UNIT = 0.15; // $ per kW unit consumed
 function initDashboard(){
   const username = getSession();
   if(!username){
-    window.location.href = 'login.html';
+    window.location.href = 'index.html';
     return;
   }
   document.getElementById('welcome-text').textContent = 'Welcome ' + username;
 
   document.getElementById('logout-btn').addEventListener('click', () => {
     clearSession();
-    window.location.href = 'login.html';
+    window.location.href = 'index.html';
   });
 
   // ---- EDC Calculator ----
